@@ -1,0 +1,115 @@
+.section-cta {
+    padding: 4.8rem 0 12.8rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(to right bottom, #52a58c, #087f5b);
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.cta-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #02261b;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    color: #02261b;
+    margin-bottom: 3.2rem;
+    font-weight: 700;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input {
+    width: 100%;
+    font-size: 1.8rem;
+    border-radius: 0.9rem;
+    padding: 1.2rem;
+    color: inherit;
+    font-family: inherit;
+    background-color: #b5d9ce;
+    border: none;
+}
+
+.cta-form select {
+    width: 100%;
+    font-size: 1.8rem;
+    border-radius: 0.9rem;
+    padding: 1.2rem;
+    color: inherit;
+    font-family: inherit;
+    background-color: #b5d9ce;
+    border: none;
+}
+
+.btn--form {
+    background-color: #02261b;
+    color: #e6f2ef;
+    align-self: end;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.cta-img-box {
+    background-image: linear-gradient(to right bottom, rgba(82, 165, 140, 0.35), rgba(8, 127, 91, 0.35)), url(../../assets/images/cta-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 59em) {
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn--form {
+        margin-top: 1.2rem;
+    }
+}
+
+@media (max-width: 34em) {
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-text-box {
+        padding: 3.2rem;
+    }
+
+    .cta-img-box {
+        height: 36rem;
+        background-position: top;
+        grid-row: 1;
+    }
+}

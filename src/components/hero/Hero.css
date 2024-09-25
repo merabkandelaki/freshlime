@@ -1,0 +1,149 @@
+.section-hero {
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: #e6f2ef;
+}
+
+.hero {
+    max-width: 100rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.btn-left-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-left {
+    background-color: #087f5b;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-right {
+    background-color: #fff;
+    color: #555;
+    font-size: 1.6rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+}
+
+.customers {
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+    justify-content: space-between;
+}
+
+.customers-imgs {
+    display: flex;
+}
+
+.customers-imgs img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #e6f2ef;
+}
+
+.customer-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 1px 15px 0px #077252;
+}
+
+
+@media (max-width: 75em) {
+    .hero {
+        gap: 4.8rem;
+    }
+}
+
+@media (max-width: 59em) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 6.4rem;
+        padding: 0 8rem;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .btn-left-right {
+        gap: 1.6rem;
+        justify-content: center;
+    }
+
+    .customers {
+        justify-content: center;
+        margin-top: 3.2rem;
+        gap: 3.2rem;
+    }
+
+    .hero-img-box {
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 60%
+    }
+}
+
+@media (max-width: 34em) {
+    .section-hero {
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+    }
+
+    .btn-left {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .btn-right {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .hero-img {
+        width: 80%
+    }
+
+}

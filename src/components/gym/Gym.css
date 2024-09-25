@@ -1,0 +1,166 @@
+.section-gym {
+    padding: 9.6rem 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    color: #077252;
+    margin-bottom: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+
+.heading-secondary {
+    font-weight: 700;
+    color: #333;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.grid-3-columns {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gym-card {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.gym-card:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.gym-img {
+    width: 100%;
+}
+
+.gym-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.gym-tags {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.tag--cardio {
+    background-color: #51cf66;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.card-name {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+    text-transform: capitalize;
+}
+
+.gym-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.items-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.8rem;
+}
+
+.gym-card-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #40c057;
+}
+
+.hydrated {
+    visibility: inherit;
+}
+
+.tag--bar {
+    background-color: #94d82d;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #40c057;
+}
+
+.all-stuff {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.link {
+    color: #087f5b;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+@media (max-width: 59em) {
+    .gym-content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+}
+
+@media (max-width: 44em) {
+    .gym-stuff {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 34em) {
+    .grid-3-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        row-gap: 9.6rem;
+    }
+}

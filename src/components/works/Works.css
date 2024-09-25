@@ -1,0 +1,144 @@
+.how-it-works {
+    padding: 9.6rem 0;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    color: #077252;
+    margin-bottom: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.grid-2-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.step-number {
+    font-size: 9.8rem;
+    font-weight: 500;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.step-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.step-img-box::before {
+    width: 100%;
+    padding-bottom: 70%;
+    background-color: #e6f2ef;
+    z-index: -2;
+}
+
+.step-img-box::after {
+    width: 80%;
+    padding-bottom: 60%;
+    background-color: #b5d9ce;
+    z-index: -1;
+}
+
+.step-img-box::before, .step-img-box::after {
+    content: "";
+    display: block;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step-img-first {
+    width: 375px;
+    height: 298px;
+}
+
+.step-img-second {
+    width: 375px;
+    height: 563px;
+}
+
+.step-img-third {
+    width: 375px;
+    height: 250px;
+}
+
+@media (max-width: 75em) {
+    .heading-secondary {
+        font-size: 3.2rem;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 59em) {
+    .step-number {
+        font-size: 7.4rem;
+    }
+}
+
+
+@media (max-width: 34em) {
+    .grid-2-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .step-img-box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .step-img-box {
+        transform: translateY(2.3rem);
+    }
+
+    .step-img-box:nth-child(6) {
+        grid-row: 5;
+        margin-bottom: 2.4rem;
+    }
+}

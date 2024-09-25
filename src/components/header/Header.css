@@ -1,0 +1,149 @@
+.header {
+    padding: 0 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9.6rem;
+    background-color: #e6f2ef;
+    position: relative;
+}
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.03);
+    z-index: 999;
+}
+
+.logo {
+    width: 118px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.nav-link {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-cta {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    background-color: #087f5b;
+    color: #fff;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.menu-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.menu-icon span:nth-child(1) {
+    top: 0;
+}
+
+.menu-icon span:nth-child(2) {
+    top: 8px;
+}
+
+.menu-icon span:nth-child(3) {
+    top: 16px;
+}
+
+.menu-icon.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.menu-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+@media (max-width: 75em) {
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .nav-list {
+        gap: 3.2rem;
+    }
+}
+
+@media (max-width: 59em) {
+    .nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.97);
+        padding: 4rem 2rem;
+        z-index:999;
+    }
+
+    .mobile-menu .burger-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4.8rem;
+    }
+
+    .nav-link {
+        font-size: 3rem;
+    }
+}
+
